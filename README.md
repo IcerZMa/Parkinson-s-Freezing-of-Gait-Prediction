@@ -2,6 +2,7 @@
 
 本專案參加 Kaggle 競賽 [「Parkinson's Freezing of Gait Prediction」](https://www.kaggle.com/competitions/tlvmc-parkinsons-freezing-gait-prediction)。本文件詳細紀錄如何將原始的線性基準模型（Baseline）改良為具備時序感知能力的深度學習架構，以精準預測帕金森氏症患者的凍結步態（FoG）現象。
 
+最終在 1,379 支參賽隊伍中脫穎而出，取得 **第 123 名（前 10%，銅牌）** 的優異成績。
 ## 為什麼需要改良 Baseline？
 
 原始基準模型採用 **Rolling Window MLP (多層感知器)**，在處理生物感測信號時存在以下技術瓶頸：
@@ -38,3 +39,4 @@
 * **多來源特徵對齊**：針對 `defog`（居家環境）與 `tdcsfog`（實驗室環境）數據進行標準化處理，提升模型跨數據集的表現。
 
 ---
+![page](Page.png)
